@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgetbook/cool_button.dart';
-import 'package:widgetbook_annotation/widgetbook_annotation.dart';
+import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
 
-@UseCase(
+@widgetbook.UseCase(
   name: 'Red',
   type: CoolButton,
   path: '[Interactions]/buttons',
@@ -14,7 +14,7 @@ Widget primaryButton(BuildContext context) {
   );
 }
 
-@UseCase(
+@widgetbook.UseCase(
   name: 'Blue',
   type: CoolButton,
   path: '[Interactions]/buttons',

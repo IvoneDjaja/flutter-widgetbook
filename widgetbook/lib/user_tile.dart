@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:flutter_widgetbook/user_tile.dart';
-import 'package:widgetbook_annotation/widgetbook_annotation.dart';
+import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
 import 'package:provider/provider.dart';
 
 class MockUserProvider extends Mock implements UserProvider {}
 
-@UseCase(name: 'Primary', type: UserTile)
+@widgetbook.UseCase(name: 'Primary', type: UserTile)
 Widget buildUserTile(BuildContext context) {
   return ChangeNotifierProvider<UserProvider>(
     create: (_) {
