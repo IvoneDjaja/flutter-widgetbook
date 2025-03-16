@@ -15,6 +15,7 @@ class WidgetbookApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Widgetbook.material(
+      initialRoute: '?path=usertile/primary',
       directories: directories,
     );
   }
