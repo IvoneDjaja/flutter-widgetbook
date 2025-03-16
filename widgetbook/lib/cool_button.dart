@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgetbook/cool_button.dart';
+import 'package:widgetbook/widgetbook.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
 
 @widgetbook.UseCase(
@@ -8,8 +9,11 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
   path: '[Interactions]/buttons',
 )
 Widget primaryButton(BuildContext context) {
-  return const CoolButton(
-    text: 'Primary',
+  return CoolButton(
+    text: context.knobs.string(
+      label: 'Title Label',
+      initialValue: 'Primary',
+    ),
     state: CoolButtonState.red,
   );
 }
@@ -20,8 +24,11 @@ Widget primaryButton(BuildContext context) {
   path: '[Interactions]/buttons',
 )
 Widget secondaryButton(BuildContext context) {
-  return const CoolButton(
-    text: 'Secondary',
+  return CoolButton(
+    text: context.knobs.string(
+      label: 'Title Label',
+      initialValue: 'Secondary',
+    ),
     state: CoolButtonState.blue,
   );
 }
