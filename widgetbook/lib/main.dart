@@ -17,6 +17,43 @@ class WidgetbookApp extends StatelessWidget {
     return Widgetbook.material(
       initialRoute: '?path=usertile/primary',
       directories: directories,
+      addons: [
+        MaterialThemeAddon(
+          themes: [
+            WidgetbookTheme(
+              name: 'Light',
+              data: ThemeData.light(),
+            ),
+            WidgetbookTheme(
+              name: 'Dark',
+              data: ThemeData.dark(),
+            ),
+          ],
+        ),
+        TextScaleAddon(
+          min: 1.0,
+          max: 2.0,
+        ),
+        LocalizationAddon(
+          locales: [
+            const Locale('en', 'US'),
+          ],
+          localizationsDelegates: [
+            DefaultWidgetsLocalizations.delegate,
+            DefaultMaterialLocalizations.delegate,
+          ],
+        ),
+        DeviceFrameAddon(
+          devices: [
+            Devices.ios.iPhoneSE,
+            Devices.ios.iPhone13,
+          ],
+        ),
+        GridAddon(),
+        AlignmentAddon(
+          initialAlignment: Alignment.center,
+        ),
+      ],
     );
   }
 }
