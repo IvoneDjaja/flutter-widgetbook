@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widgetbook/widgetbook.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
-import 'package:widgetbook_workspace/addon/custom_alignment.dart';
 
 import 'main.directories.g.dart';
 
@@ -51,7 +50,9 @@ class WidgetbookApp extends StatelessWidget {
           ],
         ),
         GridAddon(),
-        CustomAlignmentAddon(),
+        AlignmentAddon(
+          initialAlignment: Alignment.center,
+        ),
       ],
     );
   }
