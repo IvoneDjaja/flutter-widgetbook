@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgetbook/widgetbook.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
 import 'package:flutter_widgetbook/container.dart';
 
@@ -7,5 +8,11 @@ import 'package:flutter_widgetbook/container.dart';
   type: Container,
 )
 Widget container(BuildContext context) {
-  return const ContainerExample();
+  final color = context.knobs.color(
+    label: 'Color',
+    initialValue: Colors.white,
+  );
+  return ContainerExample(
+    color: color,
+  );
 }
