@@ -12,6 +12,7 @@
 import 'package:widgetbook/widgetbook.dart' as _i1;
 import 'package:widgetbook_workspace/container.dart' as _i5;
 import 'package:widgetbook_workspace/cool_button.dart' as _i3;
+import 'package:widgetbook_workspace/decorated_box.dart' as _i6;
 import 'package:widgetbook_workspace/range_slider.dart' as _i4;
 import 'package:widgetbook_workspace/user_tile.dart' as _i2;
 
@@ -67,7 +68,14 @@ final directories = <_i1.WidgetbookNode>[
           name: 'Container',
           builder: _i5.container,
         ),
-      )
+      ),
+      _i1.WidgetbookLeafComponent(
+        name: 'DecoratedBox',
+        useCase: _i1.WidgetbookUseCase(
+          name: 'DecoratedBox',
+          builder: _i6.decoratedBox,
+        ),
+      ),
     ],
   ),
 ];
