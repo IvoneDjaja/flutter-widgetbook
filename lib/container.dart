@@ -1,15 +1,67 @@
 import 'package:flutter/material.dart';
 
 class ContainerExample extends StatelessWidget {
-  const ContainerExample({required this.color, super.key});
+  const ContainerExample({
+    this.data,
+    this.alignment,
+    this.padding,
+    this.color,
+    this.decoration,
+    this.foregroundDecoration,
+    this.width,
+    this.height,
+    this.constraints,
+    this.margin,
+    this.transform,
+    this.transformAlignment,
+    this.clipBehavior,
+    super.key,
+  });
 
-  final Color color;
+  final String? data;
+
+  final Alignment? alignment;
+
+  final EdgeInsetsGeometry? padding;
+
+  final Color? color;
+
+  final Decoration? decoration;
+
+  final Decoration? foregroundDecoration;
+
+  final double? width;
+
+  final double? height;
+
+  final BoxConstraints? constraints;
+
+  final EdgeInsetsGeometry? margin;
+
+  final Matrix4? transform;
+
+  final AlignmentGeometry? transformAlignment;
+
+  final Clip? clipBehavior;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    final child = Container(
+      alignment: alignment,
+      padding: padding,
       color: color,
-      child: const Text('Container'),
+      decoration: decoration,
+      foregroundDecoration: foregroundDecoration,
+      width: width,
+      height: height,
+      constraints: constraints,
+      margin: margin,
+      transform: transform,
+      transformAlignment: transformAlignment,
+      clipBehavior: clipBehavior ?? Clip.none,
+      child: data != null ? Text(data!) : null,
     );
+    debugPrint(child.toString());
+    return child;
   }
 }
