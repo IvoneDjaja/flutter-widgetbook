@@ -24,6 +24,8 @@ class ContainerExample extends StatelessWidget {
 
   final EdgeInsetsGeometry? padding;
 
+  // If the [decoration] is used, this property must be null. A background color
+  // may still be painted by the [decoration] even if this property is null.
   final Color? color;
 
   final Decoration? decoration;
