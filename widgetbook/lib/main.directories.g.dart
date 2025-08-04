@@ -14,8 +14,9 @@ import 'package:widgetbook_workspace/column.dart' as _i5;
 import 'package:widgetbook_workspace/container.dart' as _i6;
 import 'package:widgetbook_workspace/cool_button.dart' as _i3;
 import 'package:widgetbook_workspace/decorated_box.dart' as _i7;
+import 'package:widgetbook_workspace/flex.dart' as _i8;
 import 'package:widgetbook_workspace/range_slider.dart' as _i4;
-import 'package:widgetbook_workspace/row.dart' as _i8;
+import 'package:widgetbook_workspace/row.dart' as _i9;
 import 'package:widgetbook_workspace/user_tile.dart' as _i2;
 
 final directories = <_i1.WidgetbookNode>[
@@ -86,10 +87,17 @@ final directories = <_i1.WidgetbookNode>[
         ),
       ),
       _i1.WidgetbookLeafComponent(
+        name: 'Flex',
+        useCase: _i1.WidgetbookUseCase(
+          name: 'Flex',
+          builder: _i8.flex,
+        ),
+      ),
+      _i1.WidgetbookLeafComponent(
         name: 'Row',
         useCase: _i1.WidgetbookUseCase(
           name: 'Row',
-          builder: _i8.row,
+          builder: _i9.row,
         ),
       ),
     ],
