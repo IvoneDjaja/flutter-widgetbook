@@ -10,11 +10,12 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:widgetbook/widgetbook.dart' as _i1;
-import 'package:widgetbook_workspace/container.dart' as _i5;
+import 'package:widgetbook_workspace/column.dart' as _i5;
+import 'package:widgetbook_workspace/container.dart' as _i6;
 import 'package:widgetbook_workspace/cool_button.dart' as _i3;
-import 'package:widgetbook_workspace/decorated_box.dart' as _i6;
+import 'package:widgetbook_workspace/decorated_box.dart' as _i7;
 import 'package:widgetbook_workspace/range_slider.dart' as _i4;
-import 'package:widgetbook_workspace/row.dart' as _i7;
+import 'package:widgetbook_workspace/row.dart' as _i8;
 import 'package:widgetbook_workspace/user_tile.dart' as _i2;
 
 final directories = <_i1.WidgetbookNode>[
@@ -64,24 +65,31 @@ final directories = <_i1.WidgetbookNode>[
     name: 'widgets',
     children: [
       _i1.WidgetbookLeafComponent(
+        name: 'Column',
+        useCase: _i1.WidgetbookUseCase(
+          name: 'Column',
+          builder: _i5.column,
+        ),
+      ),
+      _i1.WidgetbookLeafComponent(
         name: 'Container',
         useCase: _i1.WidgetbookUseCase(
           name: 'Container',
-          builder: _i5.container,
+          builder: _i6.container,
         ),
       ),
       _i1.WidgetbookLeafComponent(
         name: 'DecoratedBox',
         useCase: _i1.WidgetbookUseCase(
           name: 'DecoratedBox',
-          builder: _i6.decoratedBox,
+          builder: _i7.decoratedBox,
         ),
       ),
       _i1.WidgetbookLeafComponent(
         name: 'Row',
         useCase: _i1.WidgetbookUseCase(
           name: 'Row',
-          builder: _i7.row,
+          builder: _i8.row,
         ),
       ),
     ],
