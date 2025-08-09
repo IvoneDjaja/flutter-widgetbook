@@ -14,9 +14,10 @@ import 'package:widgetbook_workspace/column.dart' as _i5;
 import 'package:widgetbook_workspace/container.dart' as _i6;
 import 'package:widgetbook_workspace/cool_button.dart' as _i3;
 import 'package:widgetbook_workspace/decorated_box.dart' as _i7;
-import 'package:widgetbook_workspace/flex.dart' as _i8;
+import 'package:widgetbook_workspace/directionality.dart' as _i8;
+import 'package:widgetbook_workspace/flex.dart' as _i9;
 import 'package:widgetbook_workspace/range_slider.dart' as _i4;
-import 'package:widgetbook_workspace/row.dart' as _i9;
+import 'package:widgetbook_workspace/row.dart' as _i10;
 import 'package:widgetbook_workspace/user_tile.dart' as _i2;
 
 final directories = <_i1.WidgetbookNode>[
@@ -87,17 +88,24 @@ final directories = <_i1.WidgetbookNode>[
         ),
       ),
       _i1.WidgetbookLeafComponent(
+        name: 'Directionality',
+        useCase: _i1.WidgetbookUseCase(
+          name: 'Directionality',
+          builder: _i8.directionality,
+        ),
+      ),
+      _i1.WidgetbookLeafComponent(
         name: 'Flex',
         useCase: _i1.WidgetbookUseCase(
           name: 'Flex',
-          builder: _i8.flex,
+          builder: _i9.flex,
         ),
       ),
       _i1.WidgetbookLeafComponent(
         name: 'Row',
         useCase: _i1.WidgetbookUseCase(
           name: 'Row',
-          builder: _i9.row,
+          builder: _i10.row,
         ),
       ),
     ],
