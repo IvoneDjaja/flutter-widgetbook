@@ -9,34 +9,34 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
 )
 Widget decoratedBox(BuildContext context) {
   final sizedBoxSize = context.knobs.doubleOrNull.input(
-    label: 'SizedBox',
+    label: 'sizedBoxSize',
   );
   final data = context.knobs.stringOrNull(label: 'Text');
   final color = context.knobs.colorOrNull(
-    label: 'Color',
+    label: 'color',
   );
   final image = context.knobs.boolean(
-    label: 'Image',
+    label: 'image',
   );
   final borderWidth = context.knobs.doubleOrNull.input(
-    label: 'Border Width',
+    label: 'borderWidth',
   );
   final borderRadiusX = context.knobs.doubleOrNull.input(
-    label: 'Border Radius X',
+    label: 'borderRadiusX',
   );
   final borderRadiusY = context.knobs.doubleOrNull.input(
-    label: 'Border Radius Y',
+    label: 'borderRadiusY',
   );
   final backgroundBlendMode = context.knobs.list(
-    label: 'Background Blend Mode',
+    label: 'backgroundBlendMode',
     options: BlendMode.values,
   );
   final decorationShape = context.knobs.list(
-    label: 'Decoration Shape',
+    label: 'decorationShape',
     options: BoxShape.values,
   );
   final position = context.knobs.listOrNull(
-    label: 'Position',
+    label: 'position',
     options: DecorationPosition.values,
   );
 

@@ -9,20 +9,20 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
 )
 Widget flex(BuildContext context) {
   final variant = context.knobs.listOrNull(
-    label: 'Variant',
+    label: 'variant',
     options: ['A', 'B', 'C'],
     initialOption: 'A',
   );
   final direction = context.knobs.list(
-    label: 'Direction',
+    label: 'direction',
     options: Axis.values,
     initialOption: Axis.horizontal,
   );
   final color = context.knobs.colorOrNull(
-    label: 'Color',
+    label: 'color',
   );
   final mainAxisAlignment = context.knobs.listOrNull(
-    label: 'MainAxisAlignment',
+    label: 'mainAxisAlignment',
     options: MainAxisAlignment.values,
   );
   final mainAxisSize = context.knobs.listOrNull(
@@ -31,27 +31,27 @@ Widget flex(BuildContext context) {
   );
 
   final crossAxisAlignment = context.knobs.listOrNull(
-    label: 'CrossAxisAlignment',
+    label: 'crossAxisAlignment',
     options: CrossAxisAlignment.values,
   );
 
   final textDirection = context.knobs.listOrNull(
-    label: 'TextDirection',
+    label: 'textDirection',
     options: TextDirection.values,
   );
 
   final verticalDirection = context.knobs.listOrNull(
-    label: 'VerticalDirection',
+    label: 'verticalDirection',
     options: VerticalDirection.values,
   );
 
   final textBaseline = context.knobs.listOrNull(
-    label: 'TextBaseline',
+    label: 'textBaseline',
     options: TextBaseline.values,
   );
 
   final spacing = context.knobs.doubleOrNull.input(
-    label: 'Spacing',
+    label: 'spacing',
   );
 
   Widget child = FlexExample(

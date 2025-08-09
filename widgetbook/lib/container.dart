@@ -10,7 +10,7 @@ import 'package:flutter_widgetbook/container.dart';
 Widget container(BuildContext context) {
   final data = context.knobs.stringOrNull(label: 'Text');
   final alignment = context.knobs.listOrNull(
-    label: 'Alignment',
+    label: 'alignment',
     options: const [
       Alignment.topLeft,
       Alignment.topCenter,
@@ -24,52 +24,52 @@ Widget container(BuildContext context) {
     ],
   );
   final padding = context.knobs.doubleOrNull.input(
-    label: 'Padding',
+    label: 'padding',
   );
   final color = context.knobs.colorOrNull(
-    label: 'Color',
+    label: 'color',
   );
   final width = context.knobs.doubleOrNull.input(
-    label: 'Width',
+    label: 'width',
   );
   final height = context.knobs.doubleOrNull.input(
-    label: 'Height',
+    label: 'height',
   );
 
   final decorationShape = context.knobs.listOrNull(
-    label: 'Decoration Shape',
+    label: 'decorationShape',
     options: BoxShape.values,
   );
   final foregroundDecorationShape = context.knobs.listOrNull(
-    label: 'Foreground Decoration Shape',
+    label: 'foregroundDecorationShape',
     options: BoxShape.values,
   );
   final foregroundColor = context.knobs.colorOrNull(
-    label: 'Foreground Color',
+    label: 'foregroundColor',
   );
   final minWidth = context.knobs.doubleOrNull.input(
-    label: 'Min Width',
+    label: 'minWidth',
   );
   final maxWidth = context.knobs.doubleOrNull.input(
-    label: 'Max Width',
+    label: 'maxWidth',
   );
   final minHeight = context.knobs.doubleOrNull.input(
-    label: 'Min Height',
+    label: 'minHeight',
   );
   final maxHeight = context.knobs.doubleOrNull.input(
-    label: 'Max Height',
+    label: 'maxHeight',
   );
   final margin = context.knobs.doubleOrNull.input(
-    label: 'Margin',
+    label: 'margin',
   );
   final transform = context.knobs.listOrNull(
-    label: 'Transform',
+    label: 'transform',
     options: [
       Matrix4.identity(),
     ],
   );
   final transformAlignment = context.knobs.listOrNull(
-    label: 'Transform Alignment',
+    label: 'transformAlignment',
     options: const [
       Alignment.topLeft,
       Alignment.topCenter,
@@ -83,7 +83,7 @@ Widget container(BuildContext context) {
     ],
   );
   final clipBehavior = context.knobs.listOrNull(
-    label: 'Clip Behavior',
+    label: 'clipBehavior',
     options: Clip.values,
   );
 

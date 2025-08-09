@@ -14,10 +14,10 @@ Widget column(BuildContext context) {
     initialOption: 'A',
   );
   final color = context.knobs.colorOrNull(
-    label: 'Color',
+    label: 'color',
   );
   final mainAxisAlignment = context.knobs.listOrNull(
-    label: 'MainAxisAlignment',
+    label: 'mainAxisAlignment',
     options: MainAxisAlignment.values,
   );
   final mainAxisSize = context.knobs.listOrNull(
@@ -26,27 +26,27 @@ Widget column(BuildContext context) {
   );
 
   final crossAxisAlignment = context.knobs.listOrNull(
-    label: 'CrossAxisAlignment',
+    label: 'crossAxisAlignment',
     options: CrossAxisAlignment.values,
   );
 
   final textDirection = context.knobs.listOrNull(
-    label: 'TextDirection',
+    label: 'textDirection',
     options: TextDirection.values,
   );
 
   final verticalDirection = context.knobs.listOrNull(
-    label: 'VerticalDirection',
+    label: 'verticalDirection',
     options: VerticalDirection.values,
   );
 
   final textBaseline = context.knobs.listOrNull(
-    label: 'TextBaseline',
+    label: 'textBaseline',
     options: TextBaseline.values,
   );
 
   final spacing = context.knobs.doubleOrNull.input(
-    label: 'Spacing',
+    label: 'spacing',
   );
 
   Widget child = ColumnExample(
