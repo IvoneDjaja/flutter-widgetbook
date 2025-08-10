@@ -19,6 +19,7 @@ import 'package:widgetbook_workspace/flex.dart' as _i9;
 import 'package:widgetbook_workspace/opacity.dart' as _i10;
 import 'package:widgetbook_workspace/range_slider.dart' as _i4;
 import 'package:widgetbook_workspace/row.dart' as _i11;
+import 'package:widgetbook_workspace/shader_mask.dart' as _i12;
 import 'package:widgetbook_workspace/user_tile.dart' as _i2;
 
 final directories = <_i1.WidgetbookNode>[
@@ -114,6 +115,13 @@ final directories = <_i1.WidgetbookNode>[
         useCase: _i1.WidgetbookUseCase(
           name: 'Row',
           builder: _i11.row,
+        ),
+      ),
+      _i1.WidgetbookLeafComponent(
+        name: 'ShaderMask',
+        useCase: _i1.WidgetbookUseCase(
+          name: 'ShaderMask',
+          builder: _i12.shaderMask,
         ),
       ),
     ],
